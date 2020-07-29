@@ -1,0 +1,46 @@
+{
+  "name": "@iconscout/vue-unicons",
+  "version": "0.0.1",
+  "description": "1100+ vector icons as easy to use Vue Components",
+  "main": "./lib/cjs/index.js",
+  "module": "/index.js",
+  "sideEffects": false,
+  "scripts": {
+    "generate": "node ./build/generate.js && webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Iconscout/vue-unicons.git"
+  },
+  "keywords": [
+    "unicons",
+    "vue-unicons",
+    "icons",
+    "iconscout",
+    "vector",
+    "icons"
+  ],
+  "author": "Iconscout",
+  "license": "Apache-2.0",
+  "homepage": "https://iconscout.com/unicons",
+  "bugs": {
+    "url": "https://github.com/Iconscout/vue-unicons/issues"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@iconscout/unicons": "^2.1.11",
+    "babel-loader": "^8.1.0",
+    "cheerio": "^1.0.0-rc.3",
+    "css-loader": "^4.0.0",
+    "fs-plus": "^3.1.1",
+    "uppercamelcase": "^3.0.0",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
