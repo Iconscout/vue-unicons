@@ -1,6 +1,6 @@
 {
   "name": "@iconscout/vue-unicons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "1100+ vector icons as easy to use Vue Components",
   "main": "./lib/cjs/index.js",
   "module": "/index.js",
