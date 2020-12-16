@@ -1,6 +1,6 @@
 {
   "name": "@iconscout/vue-unicons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "1100+ vector icons as easy to use Vue Components",
   "main": "./lib/cjs/index.js",
   "module": "/index.js",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
-    "@iconscout/unicons": "^2.1.11",
+    "@iconscout/unicons": "^3.0.5",
     "babel-loader": "^8.1.0",
     "cheerio": "^1.0.0-rc.3",
     "css-loader": "^4.0.0",
