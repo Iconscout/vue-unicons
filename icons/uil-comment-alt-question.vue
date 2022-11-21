@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCommentAltQuestion",
   props: {
     size: {
       type: String,

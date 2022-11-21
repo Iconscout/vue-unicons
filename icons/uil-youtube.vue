@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilYoutube",
   props: {
     size: {
       type: String,

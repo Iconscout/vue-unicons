@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilMouseAlt2",
   props: {
     size: {
       type: String,

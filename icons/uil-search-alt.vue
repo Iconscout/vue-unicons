@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilSearchAlt",
   props: {
     size: {
       type: String,

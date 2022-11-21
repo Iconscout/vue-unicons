@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCoronavirus",
   props: {
     size: {
       type: String,

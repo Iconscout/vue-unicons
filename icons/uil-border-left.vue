@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilBorderLeft",
   props: {
     size: {
       type: String,

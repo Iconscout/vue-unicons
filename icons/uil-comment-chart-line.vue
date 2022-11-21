@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCommentChartLine",
   props: {
     size: {
       type: String,

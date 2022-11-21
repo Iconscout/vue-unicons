@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCodeBranch",
   props: {
     size: {
       type: String,

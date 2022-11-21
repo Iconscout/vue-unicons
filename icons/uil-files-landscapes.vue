@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilFilesLandscapes",
   props: {
     size: {
       type: String,

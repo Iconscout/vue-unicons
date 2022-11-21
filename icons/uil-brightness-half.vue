@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilBrightnessHalf",
   props: {
     size: {
       type: String,

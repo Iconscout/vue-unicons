@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilAlignCenterAlt",
   props: {
     size: {
       type: String,

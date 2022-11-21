@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilImageV",
   props: {
     size: {
       type: String,

@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilFileQuestion",
   props: {
     size: {
       type: String,

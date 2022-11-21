@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilTruckLoading",
   props: {
     size: {
       type: String,

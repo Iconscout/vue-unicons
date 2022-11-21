@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCheck",
   props: {
     size: {
       type: String,

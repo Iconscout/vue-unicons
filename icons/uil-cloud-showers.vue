@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCloudShowers",
   props: {
     size: {
       type: String,

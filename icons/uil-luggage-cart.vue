@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilLuggageCart",
   props: {
     size: {
       type: String,

@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCommentInfoAlt",
   props: {
     size: {
       type: String,

@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilDesktopSlash",
   props: {
     size: {
       type: String,

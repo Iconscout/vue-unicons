@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilFileMedicalAlt",
   props: {
     size: {
       type: String,

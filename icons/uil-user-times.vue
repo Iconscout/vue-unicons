@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilUserTimes",
   props: {
     size: {
       type: String,

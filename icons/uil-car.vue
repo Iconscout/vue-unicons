@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCar",
   props: {
     size: {
       type: String,

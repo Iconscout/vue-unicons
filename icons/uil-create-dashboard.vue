@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCreateDashboard",
   props: {
     size: {
       type: String,

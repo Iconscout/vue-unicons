@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilVideoSlash",
   props: {
     size: {
       type: String,

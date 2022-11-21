@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilMinusSquareFull",
   props: {
     size: {
       type: String,

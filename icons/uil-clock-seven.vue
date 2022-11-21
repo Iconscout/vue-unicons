@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilClockSeven",
   props: {
     size: {
       type: String,

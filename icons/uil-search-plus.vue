@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilSearchPlus",
   props: {
     size: {
       type: String,

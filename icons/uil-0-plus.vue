@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "Uil0Plus",
   props: {
     size: {
       type: String,

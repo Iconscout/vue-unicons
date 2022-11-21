@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilKeyholeSquareFull",
   props: {
     size: {
       type: String,

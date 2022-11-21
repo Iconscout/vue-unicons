@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilDiceOne",
   props: {
     size: {
       type: String,

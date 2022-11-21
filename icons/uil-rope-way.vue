@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilRopeWay",
   props: {
     size: {
       type: String,

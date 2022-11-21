@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilAlignJustify",
   props: {
     size: {
       type: String,

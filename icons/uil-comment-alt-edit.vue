@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCommentAltEdit",
   props: {
     size: {
       type: String,

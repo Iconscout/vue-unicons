@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCornerLeftDown",
   props: {
     size: {
       type: String,

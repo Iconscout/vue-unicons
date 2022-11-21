@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCss3Simple",
   props: {
     size: {
       type: String,

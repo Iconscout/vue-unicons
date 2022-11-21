@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilAwardAlt",
   props: {
     size: {
       type: String,

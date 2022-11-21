@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilFolderTimes",
   props: {
     size: {
       type: String,

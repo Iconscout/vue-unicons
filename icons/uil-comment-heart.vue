@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCommentHeart",
   props: {
     size: {
       type: String,

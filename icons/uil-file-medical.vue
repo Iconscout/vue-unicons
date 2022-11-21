@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilFileMedical",
   props: {
     size: {
       type: String,

@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilSlidersVAlt",
   props: {
     size: {
       type: String,

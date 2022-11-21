@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilExpandArrows",
   props: {
     size: {
       type: String,

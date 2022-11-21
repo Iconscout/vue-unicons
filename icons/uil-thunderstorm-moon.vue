@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilThunderstormMoon",
   props: {
     size: {
       type: String,

@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilDialpad",
   props: {
     size: {
       type: String,

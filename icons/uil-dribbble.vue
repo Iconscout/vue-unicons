@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilDribbble",
   props: {
     size: {
       type: String,

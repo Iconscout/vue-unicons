@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilToggleOn",
   props: {
     size: {
       type: String,

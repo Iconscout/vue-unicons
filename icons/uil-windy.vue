@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilWindy",
   props: {
     size: {
       type: String,

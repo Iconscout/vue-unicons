@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilMoneyBill",
   props: {
     size: {
       type: String,

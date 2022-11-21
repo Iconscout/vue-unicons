@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCreditCard",
   props: {
     size: {
       type: String,

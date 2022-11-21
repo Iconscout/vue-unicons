@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilSort",
   props: {
     size: {
       type: String,

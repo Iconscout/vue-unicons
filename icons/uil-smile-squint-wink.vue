@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilSmileSquintWink",
   props: {
     size: {
       type: String,

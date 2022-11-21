@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilBrightnessPlus",
   props: {
     size: {
       type: String,

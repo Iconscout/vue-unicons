@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilImageAltSlash",
   props: {
     size: {
       type: String,

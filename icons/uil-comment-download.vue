@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilCommentDownload",
   props: {
     size: {
       type: String,

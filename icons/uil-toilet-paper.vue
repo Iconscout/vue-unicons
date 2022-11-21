@@ -18,6 +18,7 @@
 import '../utils/style.css'
 
 export default {
+  name: "UilToiletPaper",
   props: {
     size: {
       type: String,
