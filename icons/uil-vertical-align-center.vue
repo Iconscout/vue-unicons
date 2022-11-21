@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilVerticalAlignCenter",
   props: {
     size: {
       type: String,

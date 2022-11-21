@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilMegaphone",
   props: {
     size: {
       type: String,

@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBringFront",
   props: {
     size: {
       type: String,

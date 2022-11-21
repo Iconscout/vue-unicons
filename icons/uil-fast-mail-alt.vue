@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFastMailAlt",
   props: {
     size: {
       type: String,

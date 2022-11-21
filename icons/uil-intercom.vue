@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilIntercom",
   props: {
     size: {
       type: String,

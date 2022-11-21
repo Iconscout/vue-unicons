@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "Uil16Plus",
   props: {
     size: {
       type: String,

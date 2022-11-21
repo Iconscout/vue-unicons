@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilHeartMedical",
   props: {
     size: {
       type: String,

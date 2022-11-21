@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilPizzaSlice",
   props: {
     size: {
       type: String,

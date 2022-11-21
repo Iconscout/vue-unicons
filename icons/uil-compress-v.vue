@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCompressV",
   props: {
     size: {
       type: String,

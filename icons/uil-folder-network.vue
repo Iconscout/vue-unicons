@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFolderNetwork",
   props: {
     size: {
       type: String,

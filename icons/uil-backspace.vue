@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBackspace",
   props: {
     size: {
       type: String,

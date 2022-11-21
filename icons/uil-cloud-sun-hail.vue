@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCloudSunHail",
   props: {
     size: {
       type: String,

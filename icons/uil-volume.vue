@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilVolume",
   props: {
     size: {
       type: String,

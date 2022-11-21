@@ -26,6 +26,9 @@
   "bugs": {
     "url": "https://github.com/Iconscout/vue-unicons/issues"
   },
+  "peerDependencies": {
+    "vue": "^2.6.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/preset-env": "^7.10.4",
@@ -36,11 +39,8 @@
     "fs-plus": "^3.1.1",
     "uppercamelcase": "^3.0.0",
     "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
-  },
-  "dependencies": {
-    "vue": "^2.6.11",
-    "vue-template-compiler": "^2.6.11"
   }
 }

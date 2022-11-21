@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilPrevious",
   props: {
     size: {
       type: String,

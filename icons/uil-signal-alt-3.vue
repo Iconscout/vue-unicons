@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSignalAlt3",
   props: {
     size: {
       type: String,

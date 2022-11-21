@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilThermometer",
   props: {
     size: {
       type: String,

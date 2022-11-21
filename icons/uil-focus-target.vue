@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFocusTarget",
   props: {
     size: {
       type: String,

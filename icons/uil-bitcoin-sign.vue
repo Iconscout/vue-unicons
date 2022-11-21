@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBitcoinSign",
   props: {
     size: {
       type: String,

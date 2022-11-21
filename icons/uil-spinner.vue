@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSpinner",
   props: {
     size: {
       type: String,

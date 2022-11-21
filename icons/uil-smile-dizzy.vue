@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSmileDizzy",
   props: {
     size: {
       type: String,

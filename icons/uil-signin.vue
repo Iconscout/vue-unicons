@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSignin",
   props: {
     size: {
       type: String,

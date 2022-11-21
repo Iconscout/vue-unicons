@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilGitlab",
   props: {
     size: {
       type: String,

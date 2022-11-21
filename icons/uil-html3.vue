@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilHtml3",
   props: {
     size: {
       type: String,

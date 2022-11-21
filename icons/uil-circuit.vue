@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCircuit",
   props: {
     size: {
       type: String,

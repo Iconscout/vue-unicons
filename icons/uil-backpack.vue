@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBackpack",
   props: {
     size: {
       type: String,

@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFootballAmerican",
   props: {
     size: {
       type: String,

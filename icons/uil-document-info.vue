@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilDocumentInfo",
   props: {
     size: {
       type: String,

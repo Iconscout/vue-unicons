@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilMinusCircle",
   props: {
     size: {
       type: String,

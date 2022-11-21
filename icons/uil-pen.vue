@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilPen",
   props: {
     size: {
       type: String,

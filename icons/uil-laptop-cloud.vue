@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilLaptopCloud",
   props: {
     size: {
       type: String,

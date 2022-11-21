@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBell",
   props: {
     size: {
       type: String,

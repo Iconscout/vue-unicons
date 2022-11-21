@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilUnlockAlt",
   props: {
     size: {
       type: String,

@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilKeyboard",
   props: {
     size: {
       type: String,

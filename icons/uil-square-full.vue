@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSquareFull",
   props: {
     size: {
       type: String,

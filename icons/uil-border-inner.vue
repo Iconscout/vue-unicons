@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBorderInner",
   props: {
     size: {
       type: String,

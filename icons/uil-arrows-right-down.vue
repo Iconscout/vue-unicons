@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilArrowsRightDown",
   props: {
     size: {
       type: String,

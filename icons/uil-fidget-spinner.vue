@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFidgetSpinner",
   props: {
     size: {
       type: String,

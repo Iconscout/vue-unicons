@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilPlane",
   props: {
     size: {
       type: String,

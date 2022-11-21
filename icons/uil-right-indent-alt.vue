@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilRightIndentAlt",
   props: {
     size: {
       type: String,

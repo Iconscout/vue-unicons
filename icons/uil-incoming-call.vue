@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilIncomingCall",
   props: {
     size: {
       type: String,

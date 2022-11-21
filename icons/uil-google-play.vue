@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilGooglePlay",
   props: {
     size: {
       type: String,

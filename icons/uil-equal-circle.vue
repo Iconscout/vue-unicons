@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilEqualCircle",
   props: {
     size: {
       type: String,

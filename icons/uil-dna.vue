@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilDna",
   props: {
     size: {
       type: String,

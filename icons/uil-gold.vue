@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilGold",
   props: {
     size: {
       type: String,

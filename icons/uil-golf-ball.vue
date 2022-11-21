@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilGolfBall",
   props: {
     size: {
       type: String,

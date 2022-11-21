@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilGithub",
   props: {
     size: {
       type: String,

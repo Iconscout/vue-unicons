@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilInbox",
   props: {
     size: {
       type: String,

@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilStethoscope",
   props: {
     size: {
       type: String,

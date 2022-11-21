@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilImageShield",
   props: {
     size: {
       type: String,

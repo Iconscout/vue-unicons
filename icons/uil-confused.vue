@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilConfused",
   props: {
     size: {
       type: String,

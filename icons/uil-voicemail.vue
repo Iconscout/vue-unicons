@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilVoicemail",
   props: {
     size: {
       type: String,

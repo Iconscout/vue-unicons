@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilScenery",
   props: {
     size: {
       type: String,

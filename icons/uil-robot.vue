@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilRobot",
   props: {
     size: {
       type: String,

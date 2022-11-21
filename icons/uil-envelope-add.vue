@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilEnvelopeAdd",
   props: {
     size: {
       type: String,

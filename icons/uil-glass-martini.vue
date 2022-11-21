@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilGlassMartini",
   props: {
     size: {
       type: String,

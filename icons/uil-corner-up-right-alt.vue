@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCornerUpRightAlt",
   props: {
     size: {
       type: String,

@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFlipV",
   props: {
     size: {
       type: String,

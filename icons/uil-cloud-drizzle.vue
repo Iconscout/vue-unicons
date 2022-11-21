@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCloudDrizzle",
   props: {
     size: {
       type: String,

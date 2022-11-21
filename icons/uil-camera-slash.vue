@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCameraSlash",
   props: {
     size: {
       type: String,

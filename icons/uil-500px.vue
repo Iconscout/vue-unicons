@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "Uil500px",
   props: {
     size: {
       type: String,

@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilAtom",
   props: {
     size: {
       type: String,

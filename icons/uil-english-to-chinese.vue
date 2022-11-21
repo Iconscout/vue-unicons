@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilEnglishToChinese",
   props: {
     size: {
       type: String,

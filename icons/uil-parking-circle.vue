@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilParkingCircle",
   props: {
     size: {
       type: String,

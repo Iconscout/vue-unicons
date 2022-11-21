@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilBill",
   props: {
     size: {
       type: String,

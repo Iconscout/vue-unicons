@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFilePlus",
   props: {
     size: {
       type: String,

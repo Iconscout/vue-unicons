@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSave",
   props: {
     size: {
       type: String,

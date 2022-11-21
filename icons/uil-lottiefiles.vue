@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilLottiefiles",
   props: {
     size: {
       type: String,

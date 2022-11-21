@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilSocialDistancing",
   props: {
     size: {
       type: String,

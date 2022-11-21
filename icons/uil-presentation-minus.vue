@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilPresentationMinus",
   props: {
     size: {
       type: String,

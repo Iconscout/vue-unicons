@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCrosshairAlt",
   props: {
     size: {
       type: String,

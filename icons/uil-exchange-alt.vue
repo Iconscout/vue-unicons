@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilExchangeAlt",
   props: {
     size: {
       type: String,

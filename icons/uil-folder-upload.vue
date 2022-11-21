@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFolderUpload",
   props: {
     size: {
       type: String,

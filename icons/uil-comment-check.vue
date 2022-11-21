@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilCommentCheck",
   props: {
     size: {
       type: String,

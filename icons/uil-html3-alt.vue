@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilHtml3Alt",
   props: {
     size: {
       type: String,

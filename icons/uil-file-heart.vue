@@ -18,7 +18,6 @@
 import '../utils/style.css'
 
 export default {
-  name: "UilFileHeart",
   props: {
     size: {
       type: String,

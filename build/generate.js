@@ -1,35 +1,32 @@
-const path = require("path");
-const fs = require("fs-plus");
-const cheerio = require("cheerio");
-const upperCamelCase = require("uppercamelcase");
+const path = require('path')
+const fs = require('fs-plus')
+const cheerio = require('cheerio')
+const upperCamelCase = require('uppercamelcase')
 
-const iconsComponentPath = path.join(process.cwd(), "icons");
-const iconsIndexPath = path.join(process.cwd(), "index.js");
-const uniconsConfig = require("@iconscout/unicons/json/line.json");
+const iconsComponentPath = path.join(process.cwd(), 'icons')
+const iconsIndexPath = path.join(process.cwd(), 'index.js')
+const uniconsConfig = require('@iconscout/unicons/json/line.json')
 
 // Clear Directories
-fs.removeSync(iconsComponentPath);
-fs.mkdirSync(iconsComponentPath);
+fs.removeSync(iconsComponentPath)
+fs.mkdirSync(iconsComponentPath)
 
-const indexJs = [];
+const indexJs = []
 
-uniconsConfig.forEach((icon) => {
-	const baseName = `uil-${icon.name}`;
-	const location = path.join(iconsComponentPath, `${baseName}.vue`);
-	const name = upperCamelCase(baseName);
-	const svgFile = fs.readFileSync(
-		path.resolve("node_modules/@iconscout/unicons", icon.svg),
-		"utf-8"
-	);
+uniconsConfig.forEach(icon => {
+  const baseName = `uil-${icon.name}`
+  const location = path.join(iconsComponentPath, `${baseName}.vue`)
+  const name = upperCamelCase(baseName)
+  const svgFile = fs.readFileSync(path.resolve('node_modules/@iconscout/unicons', icon.svg), 'utf-8')
 
-	let data = svgFile.replace(/<svg[^>]+>/gi, "").replace(/<\/svg>/gi, "");
-	// Get Path Content from SVG
-	const $ = cheerio.load(data, {
-		xmlMode: true,
-	});
-	const svgPath = $("path").attr("d");
+  let data = svgFile.replace(/<svg[^>]+>/gi, '').replace(/<\/svg>/gi, '')
+  // Get Path Content from SVG
+  const $ = cheerio.load(data, {
+    xmlMode: true
+  })
+  const svgPath = $('path').attr('d')
 
-	const template = `<template>
+  const template = `<template>
   <svg
     v-bind="$attrs"
     :width="size"
@@ -49,7 +46,6 @@ uniconsConfig.forEach((icon) => {
 import '../utils/style.css'
 
 export default {
-  name: "${name}",
   props: {
     size: {
       type: String,
@@ -57,15 +53,14 @@ export default {
     }
   }
 }
-</script>`;
+</script>`
 
-	fs.writeFileSync(location, template, "utf-8");
+  fs.writeFileSync(location, template, 'utf-8')
 
-	// Add it to index.js
-	indexJs.push(`export { ${name} } from './icons/${baseName}.vue'`);
-});
-console.log(indexJs);
+  // Add it to index.js
+})
+	indexJs.push(`export { default as ${name} } from './icons/${baseName}.vue'`);
 
-fs.writeFileSync(iconsIndexPath, indexJs.join("\n"), "utf-8");
+fs.writeFileSync(iconsIndexPath, indexJs.join('\n'), 'utf-8')
 
-console.log(`Generated ${uniconsConfig.length} icon components.`);
+console.log(`Generated ${uniconsConfig.length} icon components.`)
