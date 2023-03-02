@@ -1,7 +1,7 @@
 {
   "name": "@iconscout/vue-unicons",
-  "version": "0.0.4",
-  "description": "1100+ vector icons as easy to use Vue Components",
+  "version": "1.0.0",
+  "description": "4,500+ vector icons as easy to use Vue Components",
   "main": "./lib/cjs/index.js",
   "module": "/index.js",
   "sideEffects": false,
@@ -20,8 +20,8 @@
     "vector",
     "icons"
   ],
-  "author": "Iconscout",
-  "license": "Apache-2.0",
+  "author": "IconScout",
+  "license": "IconScout Simple License",
   "homepage": "https://iconscout.com/unicons",
   "bugs": {
     "url": "https://github.com/Iconscout/vue-unicons/issues"
