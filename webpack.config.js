@@ -1,5 +1,5 @@
-const path = require("path")
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const path = require("path");
+const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = {
   entry: "./index.js",
@@ -7,35 +7,34 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader'
+        loader: "vue-loader",
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        loader: "babel-loader",
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ]
-      }
+        use: ["vue-style-loader", "css-loader"],
+      },
     ],
   },
   resolve: {
-    extensions: [ '.js', '.vue' ],
+    extensions: [".js", ".vue"],
   },
-  plugins: [
-    new VueLoaderPlugin()
-  ],
+  plugins: [new VueLoaderPlugin()],
   output: {
     path: path.resolve(__dirname, "lib", "cjs"),
     filename: "index.js",
     globalObject: "this",
-    libraryTarget: "umd",
+    library: {
+      type: "umd",
+    },
+    clean: true,
   },
   externals: {
     vue: "vue",
   },
   mode: "production",
-}
+};
