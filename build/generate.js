@@ -58,8 +58,8 @@ export default {
   fs.writeFileSync(location, template, 'utf-8')
 
   // Add it to index.js
-  indexJs.push(`export { default as ${name} } from './icons/${baseName}'`)
 })
+	indexJs.push(`export { default as ${name} } from './icons/${baseName}.vue'`);
 
 fs.writeFileSync(iconsIndexPath, indexJs.join('\n'), 'utf-8')
 
