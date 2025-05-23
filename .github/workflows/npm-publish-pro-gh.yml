@@ -11,38 +11,41 @@ jobs:
 
     permissions:
       contents: read
-      packages: write # Required to publish with GITHUB_TOKEN
+      packages: write  # Required to publish using GITHUB_TOKEN
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js with GitHub Packages auth
         uses: actions/setup-node@v4
         with:
           node-version: 22.11.0
+          registry-url: https://npm.pkg.github.com/
 
-      - name: Configure Gemfury for install
+      - name: Configure .npmrc for Gemfury (for install only)
         run: |
-          echo "@iconscout:registry=https://npm-proxy.fury.io/iconscout/" > ~/.npmrc
-          echo "//npm-proxy.fury.io/iconscout/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+          echo "@iconscout:registry=https://npm-proxy.fury.io/iconscout/" > .npmrc
+          echo "//npm-proxy.fury.io/iconscout/:_authToken=${FURY_AUTH_TOKEN}" >> .npmrc
         env:
-          NPM_TOKEN: ${{ secrets.FURY_AUTH_TOKEN }}
-                    
+          FURY_AUTH_TOKEN: ${{ secrets.FURY_AUTH_TOKEN }}
+
       - name: Install dependencies from Gemfury
         run: npm ci --progress=false
+        env:
+          NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
 
       - name: Build package
         run: |
           npm i @iconscout/unicons@latest
           npm run generate
+        env:
+          NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc
 
-      - name: Configure GitHub registry for publish
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
+      - name: Restore GitHub registry config for publish
+        run: rm .npmrc
 
       - name: Publish to GitHub Packages
-        run: npm publish --registry=https://npm.pkg.github.com/
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
