@@ -1,0 +1,47 @@
+name: Publish to GitHub Packages
+
+on:
+  push:
+    branches:
+      - "private-*"
+
+jobs:
+  publish-npm:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write # Required to publish with GITHUB_TOKEN
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.11.0
+
+      - name: Configure Gemfury for install
+        run: |
+          echo "@iconscout:registry=https://npm-proxy.fury.io/iconscout/" > ~/.npmrc
+          echo "//npm-proxy.fury.io/iconscout/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+        env:
+          NPM_TOKEN: ${{ secrets.FURY_AUTH_TOKEN }}
+
+      - name: Install dependencies from Gemfury
+        run: npm ci --progress=false
+
+      - name: Build package
+        run: |
+          npm i @iconscout/unicons@latest
+          npm run generate
+
+      - name: Configure GitHub registry for publish
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > ~/.npmrc
+
+      - name: Publish to GitHub Packages
+        run: npm publish --registry=https://npm.pkg.github.com/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
