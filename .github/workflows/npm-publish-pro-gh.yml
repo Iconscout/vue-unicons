@@ -28,7 +28,7 @@ jobs:
           echo "//npm-proxy.fury.io/iconscout/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
         env:
           NPM_TOKEN: ${{ secrets.FURY_AUTH_TOKEN }}
-``
+                    
       - name: Install dependencies from Gemfury
         run: npm ci --progress=false
 
