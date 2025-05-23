@@ -28,7 +28,7 @@ jobs:
           echo "//npm-proxy.fury.io/iconscout/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
         env:
           NPM_TOKEN: ${{ secrets.FURY_AUTH_TOKEN }}
-
+``
       - name: Install dependencies from Gemfury
         run: npm ci --progress=false
 
@@ -39,9 +39,10 @@ jobs:
 
       - name: Configure GitHub registry for publish
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" > ~/.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${NODE_AUTH_TOKEN}" > ~/.npmrc
 
       - name: Publish to GitHub Packages
         run: npm publish --registry=https://npm.pkg.github.com/
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
